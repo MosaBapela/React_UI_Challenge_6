@@ -1,0 +1,46 @@
+nav{
+    position : fixed ;
+    top : 0;
+    height : 70px;
+    width : 100vw;
+    background-color: rgb(52, 114, 185);
+
+}
+
+.content {
+    max-width : 1200px;
+    margin : auto;
+    padding : 10px;
+    display: flex;
+    align-items : center;
+    justify-content : space-between;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.link{
+    text-decoration : none;
+    color: #FFF;
+    padding : 5px;
+    cursor: pointer;
+    padding: 5px 10;
+}
+
+.link:hover {
+    color: rgb(152, 152, 204);
+}
+
+.profile-icon, .cart-icon{
+    height : 40px;
+    width : 40px;
+    border :1px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+}
