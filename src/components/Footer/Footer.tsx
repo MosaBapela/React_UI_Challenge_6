@@ -1,5 +1,3 @@
-//import React from 'react'
-//import { ContentContainer } from '../ContentContainer'
 import styles from './Footer.module.css'
 import berries from '../../assets/berries_in_bowl.jpg'
 import meat from '../../assets/steak.png'

@@ -1,5 +1,3 @@
-//import React from 'react'
-//import { Text } from '../Text/Text'
 import styles from './Navbar.module.css'
 import { ContentContainer } from '../ContentContainer'
 import mainIcon from '../../assets/lettuce.png'
@@ -11,10 +9,9 @@ export const Navbar = () => {
     
   return (
         <nav>
-                {/*<div className={styles.content}>*/}
 
                 <ContentContainer className={styles.content}>
-                {/*<Text variant={'h2'} style={{margin: 0}}>Healthy Fruit Salads <br/>And Juices</Text>*/}
+               
                 
                 <div className={styles.mainIconDiv}>
                     <div className={styles.imageDiv}>
@@ -46,7 +43,7 @@ export const Navbar = () => {
 
                     
 
-                {/*</div>*/}
+
         </nav>
   )
 }

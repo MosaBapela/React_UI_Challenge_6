@@ -1,4 +1,3 @@
-//import React from 'react'
 import styles from './SecondContainer.module.css'
 import juice from '../../assets/orange_juice.jpg'
 
