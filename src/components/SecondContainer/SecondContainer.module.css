@@ -1,0 +1,25 @@
+.mainDiv{
+    background-color:rgb(31, 38, 48);
+    padding-left: 10%;
+    display: flex;
+    /*justify-content: space-between;*/
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}
+
+button{
+    background-color: darkorange;
+}
+
+.image{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    position: absolute;
+    right : 10px;
+    
+    
+}
+

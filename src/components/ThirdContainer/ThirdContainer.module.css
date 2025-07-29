@@ -1,0 +1,12 @@
+.mainDiv{
+    display:flex;
+    padding-left: 10%;
+    justify-content:space-between;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.image_3{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}

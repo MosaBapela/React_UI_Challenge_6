@@ -1,16 +1,15 @@
 nav{
     position : fixed ;
     top : 0;
-    height : 70px;
+    height : 80px;
     width : 100vw;
-    background-color: rgb(52, 114, 185);
+    background-color: rgb(39, 48, 57);
 
 }
 
 .content {
-    max-width : 1200px;
+    
     margin : auto;
-    padding : 10px;
     display: flex;
     align-items : center;
     justify-content : space-between;
@@ -38,9 +37,25 @@ nav{
     height : 40px;
     width : 40px;
     border :1px;
-    background-color: black;
+    background-color: rgb(41, 35, 35);
     display: flex;
     justify-content: center;
     align-items:center;
     cursor: pointer;
+}
+.mainIconDiv{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+img{
+    height : 40px;
+    width : 40px;
+    border :1px;
+}
+
+.image{
+    height: 15px;
+    width: 15px;
 }

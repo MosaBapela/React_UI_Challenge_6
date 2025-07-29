@@ -4,18 +4,27 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import {Text} from './components/Text/Text'
 import {Navbar} from './components/Navbar/Navbar'
+import { Footer } from './components/Footer/Footer'
+import { FirstContainer } from './components/FirstContainer/FirstContainer'
+import { SecondContainer } from './components/SecondContainer/SecondContainer'
+import { ThirdContainer } from './components/ThirdContainer/ThirdContainer'
+import { FourthContainer } from './components/FourthContainer/FourthContainer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-       <Navbar />
-       <Text variant = 'h1'> Hi There</Text>
-       <Text variant = 'h2'> Hi There</Text>
-       <Text variant = 'p'> Hi There</Text>
-       <Text variant = 'span'> Hi There</Text>
-    </>
+    <div id='app-container'>
+      <div id='scrollable'>
+        <Navbar />
+        <FirstContainer />
+        <SecondContainer/>
+        <ThirdContainer/>
+        <FourthContainer/>
+
+      </div>
+       <Footer />
+    </div>
   )
 }
 
