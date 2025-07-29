@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import styles from './FourthContainer.module.css'
 import strawberry from '../../assets/strawberries.jpg'
 

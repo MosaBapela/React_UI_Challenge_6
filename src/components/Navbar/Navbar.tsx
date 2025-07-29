@@ -1,5 +1,5 @@
-import React from 'react'
-import { Text } from '../Text/Text'
+//import React from 'react'
+//import { Text } from '../Text/Text'
 import styles from './Navbar.module.css'
 import { ContentContainer } from '../ContentContainer'
 import mainIcon from '../../assets/lettuce.png'

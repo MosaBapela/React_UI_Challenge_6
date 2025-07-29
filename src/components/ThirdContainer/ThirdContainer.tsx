@@ -1,4 +1,4 @@
-import React from 'react'
+//import React from 'react'
 import styles from './ThirdContainer.module.css'
 import pic1 from '../../assets/pic_1.jpg'
 import pic2 from '../../assets/pic_2.jpg'
