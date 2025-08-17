@@ -1,0 +1,205 @@
+.footer {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(24, 28, 37);
+    padding: 3rem 0;
+    min-height: 200px;
+  }
+  
+  .footer__content {
+    width: 100%;
+  }
+  
+  .footer__main {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .footer__hero-image img {
+    height: 150px;
+    width: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer__features {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+  
+  .footer__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  
+  .footer__feature img {
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+  }
+  
+  .footer__feature-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .footer__hours {
+    text-align: left;
+  }
+  
+  .footer__hours-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer__hours-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer__hours-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer__hours-list li:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 320px) {
+    .footer {
+      padding: 2rem 0;
+      position: static;
+      margin-top: 2rem;
+    }
+    
+    .footer__main {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      text-align: center;
+    }
+    
+    .footer__hero-image img {
+      height: 120px;
+      width: 120px;
+    }
+    
+    .footer__features {
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    
+    .footer__feature img {
+      height: 30px;
+      width: 30px;
+    }
+    
+    .footer__feature-title {
+      font-size: 0.8rem;
+    }
+    
+    .footer__hours-title {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    .footer {
+      padding: 2.5rem 0;
+      position: static;
+      margin-top: 2rem;
+    }
+    
+    .footer__main {
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+      text-align: center;
+    }
+    
+    .footer__hero-image img {
+      height: 130px;
+      width: 130px;
+    }
+    
+    .footer__features {
+      gap: 2.5rem;
+    }
+    
+    .footer__feature img {
+      height: 35px;
+      width: 35px;
+    }
+    
+    .footer__feature-title {
+      font-size: 0.85rem;
+    }
+    
+    .footer__hours-title {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .footer {
+      padding: 3rem 0;
+      position: static;
+      margin-top: 2rem;
+    }
+    
+    .footer__main {
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+    }
+    
+    .footer__hero-image {
+      grid-column: 1 / -1;
+      justify-self: center;
+    }
+    
+    .footer__hero-image img {
+      height: 140px;
+      width: 140px;
+    }
+    
+    .footer__features {
+      justify-self: start;
+    }
+    
+    .footer__hours {
+      justify-self: end;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .footer__main {
+      gap: 2.5rem;
+    }
+    
+    .footer__features {
+      gap: 2.5rem;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .footer__main {
+      gap: 3rem;
+    }
+    
+    .footer__features {
+      gap: 3rem;
+    }
+  }
