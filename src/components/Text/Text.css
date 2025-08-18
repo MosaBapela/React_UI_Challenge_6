@@ -1,0 +1,222 @@
+.text {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    line-height: 1.6;
+  }
+  
+  /* Variants */
+  .text--h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .text--h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
+  }
+  
+  .text--h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.6rem;
+  }
+  
+  .text--h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text--h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.4rem;
+  }
+  
+  .text--h6 {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 0.3rem;
+  }
+  
+  .text--p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  
+  .text--span {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: inherit;
+  }
+  
+  .text--small {
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  
+  /* Colors */
+  .text--primary {
+    color: #ffffff;
+  }
+  
+  .text--secondary {
+    color: #6c757d;
+  }
+  
+  .text--white {
+    color: #ffffff;
+  }
+  
+  .text--black {
+    color: #000000;
+  }
+  
+  .text--orange {
+    color: #ff8c00;
+  }
+  
+  /* Sizes */
+  .text--size-small {
+    font-size: 0.875rem;
+  }
+  
+  .text--size-medium {
+    font-size: 1rem;
+  }
+  
+  .text--size-large {
+    font-size: 1.25rem;
+  }
+  
+  .text--size-xl {
+    font-size: 1.5rem;
+  }
+  
+  /* Weights */
+  .text--weight-normal {
+    font-weight: 400;
+  }
+  
+  .text--weight-medium {
+    font-weight: 500;
+  }
+  
+  .text--weight-bold {
+    font-weight: 700;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 320px) {
+    .text--h1 {
+      font-size: 1.8rem;
+    }
+    
+    .text--h2 {
+      font-size: 1.5rem;
+    }
+    
+    .text--h3 {
+      font-size: 1.2rem;
+    }
+    
+    .text--h4 {
+      font-size: 1.1rem;
+    }
+    
+    .text--h5 {
+      font-size: 1rem;
+    }
+    
+    .text--h6 {
+      font-size: 0.9rem;
+    }
+    
+    .text--p {
+      font-size: 0.9rem;
+    }
+    
+    .text--small {
+      font-size: 0.8rem;
+    }
+  }
+  
+  @media (min-width: 321px) and (max-width: 480px) {
+    .text--h1 {
+      font-size: 2rem;
+    }
+    
+    .text--h2 {
+      font-size: 1.6rem;
+    }
+    
+    .text--h3 {
+      font-size: 1.3rem;
+    }
+    
+    .text--h4 {
+      font-size: 1.15rem;
+    }
+    
+    .text--h5 {
+      font-size: 1.05rem;
+    }
+    
+    .text--h6 {
+      font-size: 0.95rem;
+    }
+    
+    .text--p {
+      font-size: 0.95rem;
+    }
+    
+    .text--small {
+      font-size: 0.85rem;
+    }
+  }
+  
+  @media (min-width: 481px) and (max-width: 768px) {
+    .text--h1 {
+      font-size: 2.2rem;
+    }
+    
+    .text--h2 {
+      font-size: 1.8rem;
+    }
+    
+    .text--h3 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    .text--h1 {
+      font-size: 2.3rem;
+    }
+    
+    .text--h2 {
+      font-size: 1.9rem;
+    }
+  }
+  
+  @media (min-width: 1025px) {
+    .text--h1 {
+      font-size: 2.5rem;
+    }
+    
+    .text--h2 {
+      font-size: 2rem;
+    }
+  }
