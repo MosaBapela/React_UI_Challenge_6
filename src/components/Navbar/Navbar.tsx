@@ -1,5 +1,5 @@
 import styles from './Navbar.module.css'
-import { ContentContainer } from '../ContentContainer'
+//import { ContentContainer } from '../ContentContainer'
 import mainIcon from '../../assets/lettuce.png'
 import userIcon from '../../assets/user_profile.png'
 import cartIcon from '../../assets/shopping_cart.png'
@@ -10,7 +10,7 @@ export const Navbar = () => {
   return (
         <nav>
 
-                <ContentContainer className={styles.content}>
+                {/*<ContentContainer className={styles.content}>*/}
                
                 
                 <div className={styles.mainIconDiv}>
@@ -39,7 +39,7 @@ export const Navbar = () => {
 
                 </div>
                     
-                </ContentContainer>
+                {/*</ContentContainer>*/}
 
                     
 
