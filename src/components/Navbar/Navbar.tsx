@@ -5,6 +5,7 @@ import './Navbar.css';
 import mainIcon from '../../assets/lettuce.png';
 import userIcon from '../../assets/user_profile.png';
 import cartIcon from '../../assets/shopping_cart.png';
+//Improved navbar
 
 export const Navbar: React.FC = () => {
   return (
