@@ -1,49 +1,45 @@
-import styles from './Navbar.module.css'
+import React from 'react';
+import { ContentContainer } from '../ContentContainer/ContentContainer';
+import { Text } from '../Text/Text';
+import './Navbar.css';
+import mainIcon from '../../assets/lettuce.png';
+import userIcon from '../../assets/user_profile.png';
+import cartIcon from '../../assets/shopping_cart.png';
 
-import mainIcon from '../../assets/lettuce.png'
-import userIcon from '../../assets/user_profile.png'
-import cartIcon from '../../assets/shopping_cart.png'
-
-export const Navbar = () => {
-
-    
+export const Navbar: React.FC = () => {
   return (
-        <nav>
+    <nav className="navbar">
+      <ContentContainer className="navbar__content">
+        <div className="navbar__brand">
+          <div className="navbar__icon">
+            <img src={mainIcon} alt="Restaurant logo" />
+          </div>
+          <Text variant="small" className="navbar__brand-text" color="white">
+            Healthy Fruit Salads<br />
+            And Juices
+          </Text>
+        </div>
 
-            
-               
-                
-                <div className={styles.mainIconDiv}>
-                    <div className={styles.imageDiv}>
-                        <img src= {mainIcon} alt="main Icon picture"/>  {/*<img src= {mainIcon} alt="main Icon picture"/>*/}
-                    </div>
-                    <p style={{fontSize : 10}}>Healthy Fruit Salads <br/>And Juices</p>
+        <div className="navbar__menu">
+          <div className="navbar__links">
+            <a href="/#" className="navbar__link navbar__link--primary">HOME</a>
+            <a href="/#" className="navbar__link navbar__link--secondary">MENU</a>
+            <a href="/#" className="navbar__link navbar__link--secondary">PAGES</a>
+            <a href="/#" className="navbar__link navbar__link--secondary">BLOG</a>
+            <a href="/#" className="navbar__link navbar__link--secondary">CONTACT US</a>
+          </div>
 
-                </div>
+          <div className="navbar__actions">
+            <div className="navbar__action-btn">
+              <img src={userIcon} alt="User profile" />
+            </div>
+            <div className="navbar__action-btn">
+              <img src={cartIcon} alt="Shopping cart" />
+            </div>
+          </div>
+        </div>
+      </ContentContainer>
+    </nav>
+  );
+};
 
-                <div className={styles.links}>
-                    <a href="/#" className = {styles.link}>HOME</a>
-                    <a href="/#" className = {styles.link}>MENU</a>
-                    <a href="/#" className = {styles.link}>PAGES</a>
-                    <a href="/#" className = {styles.link}>BLOG</a>
-                    <a href="/#" className = {styles.link}>CONTACT US</a>
-                    
-
-                    <div className={styles['profile-icon']}>
-                        <img className={styles.image} src={userIcon} alt="user icon for users"/>
-                    </div>
-                    
-                    <div className={styles['cart-icon']}>
-                         <img className={styles.image} src={cartIcon} alt="cart icon for cart"/>
-                    </div>
-
-                </div>
-                    
-            
-
-                    
-
-
-        </nav>
-  )
-}

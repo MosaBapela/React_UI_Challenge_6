@@ -1,0 +1,115 @@
+.first-container {
+  background-color: rgb(72, 104, 136);
+  background-image: url("/src/assets/strawberries.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.first-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.first-container__content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.first-container__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.first-container__subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.first-container__main {
+  max-width: 600px;
+}
+
+.first-container__title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 0.9;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.first-container__description {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 3rem;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive Design */
+@media (max-width: 320px) {
+  .first-container__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .first-container__title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .first-container__description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+  .first-container__header {
+    margin-bottom: 3rem;
+  }
+  
+  .first-container__title {
+    font-size: 3rem;
+    margin-bottom: 1.8rem;
+  }
+  
+  .first-container__description {
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .first-container__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .first-container__title {
+    font-size: 3.8rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .first-container__title {
+    font-size: 4rem;
+  }
+}
