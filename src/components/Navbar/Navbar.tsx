@@ -1,5 +1,4 @@
 import styles from './Navbar.module.css'
-
 import mainIcon from '../../assets/lettuce.png'
 import userIcon from '../../assets/user_profile.png'
 import cartIcon from '../../assets/shopping_cart.png'
@@ -14,7 +13,7 @@ export const Navbar = () => {
                 
                 <div className={styles.mainIconDiv}>
                     <div className={styles.imageDiv}>
-                        <img src= {mainIcon} alt="main Icon picture"/>  {/*<img src= {mainIcon} alt="main Icon picture"/>*/}
+                        <img src= {mainIcon} alt="Company Log picture"/>  {/*<img src= {mainIcon} alt="main Icon picture"/>*/}
                     </div>
                     <p style={{fontSize : 10}}>Healthy Fruit Salads <br/>And Juices</p>
 
