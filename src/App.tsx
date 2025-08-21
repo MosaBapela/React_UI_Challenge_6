@@ -6,7 +6,6 @@ import { SecondContainer } from './components/SecondContainer/SecondContainer';
 import { ThirdContainer } from './components/ThirdContainer/ThirdContainer';
 import { FourthContainer } from './components/FourthContainer/FourthContainer';
 
-
 function App() {
   return (
     <div id="app-container">
