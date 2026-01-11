@@ -20,8 +20,9 @@
   }
   
   .footer__hero-image img {
-    height: 150px;
-    width: 150px;
+    width: 100%;
+    max-width: 150px;
+    height: auto;
     border-radius: 12px;
     object-fit: cover;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
@@ -43,8 +44,9 @@
   }
   
   .footer__feature img {
-    height: 40px;
-    width: 40px;
+    width: 100%;
+    max-width: 40px;
+    height: auto;
     object-fit: contain;
   }
   
@@ -94,8 +96,8 @@
     }
     
     .footer__hero-image img {
-      height: 120px;
-      width: 120px;
+      max-width: 120px;
+      height: auto;
     }
     
     .footer__features {
@@ -104,8 +106,8 @@
     }
     
     .footer__feature img {
-      height: 30px;
-      width: 30px;
+      max-width: 30px;
+      height: auto;
     }
     
     .footer__feature-title {
@@ -131,8 +133,8 @@
     }
     
     .footer__hero-image img {
-      height: 130px;
-      width: 130px;
+      max-width: 130px;
+      height: auto;
     }
     
     .footer__features {
@@ -140,8 +142,8 @@
     }
     
     .footer__feature img {
-      height: 35px;
-      width: 35px;
+      max-width: 35px;
+      height: auto;
     }
     
     .footer__feature-title {
@@ -171,8 +173,8 @@
     }
     
     .footer__hero-image img {
-      height: 140px;
-      width: 140px;
+      max-width: 140px;
+      height: auto;
     }
     
     .footer__features {
