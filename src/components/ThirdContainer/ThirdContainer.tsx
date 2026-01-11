@@ -6,40 +6,39 @@ import pic1 from '../../assets/pic_1.jpg';
 import pic2 from '../../assets/pic_2.jpg';
 import pic3 from '../../assets/pic_3.jpg';
 
-export const ThirdContainer: React.FC = () => {
+type Item = {
+  img?: string;
+  title: React.ReactNode;
+  description: React.ReactNode;
+};
+
+type Props = {
+  items?: Item[];
+  className?: string;
+};
+
+const defaultItems: Item[] = [
+  { img: pic1, title: 'ARCU VOLUT FAT VITAE', description: 'Phestiers 1geart' },
+  { img: pic2, title: '$19,99,90,99E', description: 'Orvste past bronps' },
+  { img: pic3, title: 'SFIEFLY TUN DPENARD', description: 'Ongand suniers' }
+];
+
+export const ThirdContainer: React.FC<Props> = ({ items = defaultItems, className = '' }) => {
   return (
-    <div className="third-container">
+    <div className={`third-container ${className}`.trim()}>
       <ContentContainer className="third-container__content">
         <div className="third-container__grid">
-          <div className="third-container__item">
-            <img src={pic1} alt="Fresh fruit" />
-            <Text variant="h3" className="third-container__item-title" color="white">
-              ARCU VOLUT FAT VITAE
-            </Text>
-            <Text variant="p" className="third-container__item-description" color="white">
-              Phestiers 1geart
-            </Text>
-          </div>
-
-          <div className="third-container__item">
-            <img src={pic2} alt="Fresh fruit" />
-            <Text variant="h3" className="third-container__item-title" color="white">
-              $19,99,90,99E
-            </Text>
-            <Text variant="p" className="third-container__item-description" color="white">
-              Orvste past bronps
-            </Text>
-          </div>
-
-          <div className="third-container__item">
-            <img src={pic3} alt="Fresh fruit" />
-            <Text variant="h3" className="third-container__item-title" color="white">
-              SFIEFLY TUN DPENARD
-            </Text>
-            <Text variant="p" className="third-container__item-description" color="white">
-              Ongand suniers
-            </Text>
-          </div>
+          {items.map((it, idx) => (
+            <div key={idx} className="third-container__item">
+              {it.img && <img src={it.img} alt={typeof it.title === 'string' ? it.title : `item-${idx}`} />}
+              <Text variant="h3" className="third-container__item-title" color="white">
+                {it.title}
+              </Text>
+              <Text variant="p" className="third-container__item-description" color="white">
+                {it.description}
+              </Text>
+            </div>
+          ))}
         </div>
       </ContentContainer>
     </div>
