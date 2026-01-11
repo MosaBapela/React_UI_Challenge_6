@@ -1,9 +1,9 @@
 import React from 'react';
 import { ContentContainer } from '../ContentContainer/ContentContainer';
 import { Text } from '../Text/Text';
-import { Button } from '../Button/Button';
 import './FourthContainer.css';
 import strawberryDefault from '../../assets/strawberries.jpg';
+import { Card } from '../UI/Card';
 
 type Props = {
   title?: React.ReactNode;
@@ -48,17 +48,16 @@ export const FourthContainer: React.FC<Props> = ({
           <img src={img} alt="Fourth container visual" />
         </div>
 
-        <div className="fourth-container__card">
-          <Text variant="h3" className="fourth-container__card-title" color="black">
-            {cardTitle}
-          </Text>
-          <Text variant="p" className="fourth-container__card-description" color="black">
-            {cardDescription}
-          </Text>
-          <Button variant="secondary" size="medium">
-            {buttonLabel}
-          </Button>
-        </div>
+        <Card
+          cardClass="fourth-container__card"
+          title={cardTitle}
+          description={cardDescription}
+          buttonLabel={buttonLabel}
+          titleClass="fourth-container__card-title"
+          descriptionClass="fourth-container__card-description"
+          titleColor="black"
+          descriptionColor="black"
+        />
       </ContentContainer>
     </div>
   );
