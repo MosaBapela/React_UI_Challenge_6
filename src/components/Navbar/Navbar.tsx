@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContentContainer } from '../ContentContainer/ContentContainer';
 import { Text } from '../Text/Text';
+import { IconButton } from '../UI/IconButton';
 import './Navbar.css';
 import mainIconDefault from '../../assets/lettuce.png';
 import userIconDefault from '../../assets/user_profile.png';
@@ -55,9 +56,7 @@ export const Navbar: React.FC<Props> = ({
 
           <div className="navbar__actions">
             {actionIcons.map((icon, idx) => (
-              <div key={idx} className="navbar__action-btn">
-                <img src={icon} alt={`action-${idx}`} />
-              </div>
+              <IconButton key={idx} src={icon} alt={`action-${idx}`} />
             ))}
           </div>
         </div>

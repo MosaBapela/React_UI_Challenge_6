@@ -1,10 +1,10 @@
 import React from 'react';
 import { ContentContainer } from '../ContentContainer/ContentContainer';
-import { Text } from '../Text/Text';
 import './ThirdContainer.css';
 import pic1 from '../../assets/pic_1.jpg';
 import pic2 from '../../assets/pic_2.jpg';
 import pic3 from '../../assets/pic_3.jpg';
+import { Card } from '../UI/Card';
 
 type Item = {
   img?: string;
@@ -29,15 +29,16 @@ export const ThirdContainer: React.FC<Props> = ({ items = defaultItems, classNam
       <ContentContainer className="third-container__content">
         <div className="third-container__grid">
           {items.map((it, idx) => (
-            <div key={idx} className="third-container__item">
-              {it.img && <img src={it.img} alt={typeof it.title === 'string' ? it.title : `item-${idx}`} />}
-              <Text variant="h3" className="third-container__item-title" color="white">
-                {it.title}
-              </Text>
-              <Text variant="p" className="third-container__item-description" color="white">
-                {it.description}
-              </Text>
-            </div>
+            <Card
+              key={idx}
+              img={it.img}
+              imgAlt={typeof it.title === 'string' ? it.title : `item-${idx}`}
+              title={it.title}
+              description={it.description}
+              cardClass="third-container__item"
+              titleClass="third-container__item-title"
+              descriptionClass="third-container__item-description"
+            />
           ))}
         </div>
       </ContentContainer>

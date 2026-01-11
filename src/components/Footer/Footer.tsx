@@ -1,6 +1,7 @@
 import React from 'react';
 import { ContentContainer } from '../ContentContainer/ContentContainer';
 import { Text } from '../Text/Text';
+import { Card } from '../UI/Card';
 import './Footer.css';
 import berriesDefault from '../../assets/berries_in_bowl.jpg';
 import meat from '../../assets/steak.png';
@@ -46,12 +47,15 @@ export const Footer: React.FC<Props> = ({
 
           <div className="footer__features">
             {features.map((f, i) => (
-              <div key={i} className="footer__feature">
-                {f.img && <img src={f.img} alt={typeof f.title === 'string' ? f.title : `feature-${i}`} />}
-                <Text variant="h5" className="footer__feature-title" color="white">
-                  {f.title}
-                </Text>
-              </div>
+              <Card
+                key={i}
+                img={f.img}
+                imgAlt={typeof f.title === 'string' ? f.title : `feature-${i}`}
+                title={f.title}
+                cardClass="footer__feature"
+                titleClass="footer__feature-title"
+                titleVariant="h5"
+              />
             ))}
           </div>
 
